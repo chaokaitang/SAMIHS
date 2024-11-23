@@ -2,13 +2,28 @@ import SimpleITK as sitk
 import numpy as np
 import os
 
-scans_path = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1\ct_scans'
-masks_path = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1\masks'
+# for my computer
+# scans_path = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1\ct_scans'
+# masks_path = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1\masks'
 
-scans_path_2d = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1\ct_2d'
-masks_path_2d = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1\mask_2d'
+# scans_path_2d = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1\ct_2d'
+# masks_path_2d = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1\mask_2d'
+
+
+# for kaggle notebook
+scans_path = '/kaggle/input/ct-zip/computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1/ct_scans'
+masks_path = '/kaggle/input/ct-zip/computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1/masks'
+scans_path_2d = '/kaggle/working/SAMIHS/dataset/ct_2d'
+masks_path_2d = '/kaggle/working/SAMIHS/dataset/mask_2d'
 
 ground_truths = os.listdir(masks_path)
+
+if not os.path.exists(scans_path_2d):
+    os.makedirs(scans_path_2d)
+
+if not os.path.exists(masks_path_2d):
+    os.makedirs(masks_path_2d)
+
 
 for pa in os.listdir(scans_path):
     scan_img = sitk.ReadImage(os.path.join(scans_path, pa))

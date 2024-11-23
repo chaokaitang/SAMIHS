@@ -1,10 +1,17 @@
 # This file is used to configure the training or testing parameters for each task
 class Config_BCIHM:
+    # # This dataset is for intracranial hemorrhage segmentation
+    # data_path = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1'
+    # save_path = "./checkpoints/BCIHM/"
+    # tensorboard_path = "./tensorboard/BCIHM/"
+    # load_path = ''
+    # save_path_code = "_"
+
     # This dataset is for intracranial hemorrhage segmentation
-    data_path = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1'
-    save_path = "./checkpoints/BCIHM/"
-    tensorboard_path = "./tensorboard/BCIHM/"
-    load_path = ''
+    data_path = '/kaggle/working/SAMIHS/dataset'
+    save_path = "/kaggle/working/SAMIHS/checkpoints/BCIHM/"
+    tensorboard_path = "/kaggle/working/SAMIHS/tensorboard/BCIHM/"
+    load_path = '/kaggle/working/SAMIHS/pretrained/sam_vit_b_01ec64.pth'
     save_path_code = "_"
 
     workers = 2                         # data loading workers (default: 8)
