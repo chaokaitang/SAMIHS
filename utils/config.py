@@ -1,15 +1,15 @@
 # This file is used to configure the training or testing parameters for each task
 class Config_BCIHM:
     # This dataset is for intracranial hemorrhage segmentation
-    data_path = "./data/to/BCIHM/"
-    save_path = "./checkpoints/to/BCIHM/"
+    data_path = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1'
+    save_path = "./checkpoints/BCIHM/"
     tensorboard_path = "./tensorboard/BCIHM/"
     load_path = ''
     save_path_code = "_"
 
     workers = 2                         # data loading workers (default: 8)
     epochs = 200                        # total training epochs (default: 400)
-    batch_size = 2                      # batch size (default: 4)
+    batch_size = 1                      # batch size (default: 4)
     learning_rate = 1e-4                # initial learning rate (default: 0.001)
     momentum = 0.9                      # momentum
     classes = 2                         # the number of classes (background + foreground)

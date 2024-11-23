@@ -26,7 +26,7 @@ def main():
 
     parser = argparse.ArgumentParser(description='Networks')
     parser.add_argument('-task', required=True, default='BCIHM', help='task or dataset name')
-    parser.add_argument('-sam_ckpt', required=True, type=str, default='/data/wyn/Medical-SAM-Adapter/ckpt/sam_vit_b_01ec64.pth', help='Pretrained checkpoint of SAM')
+    parser.add_argument('-sam_ckpt', required=True, type=str, default='./pretrained/sam_vit_b_01ec64.pth', help='Pretrained checkpoint of SAM')
     parser.add_argument('-fold', required=True, type=int, default=0, help='task or dataset name')
     parser.add_argument('--modelname', default='SAMIHS', type=str, help='type of model, e.g., SAM, SAMFull, MedSAM, MSA, SAMed, SAMUS...')
     parser.add_argument('--encoder_input_size', type=int, default=1024, help='the image size of the encoder input, 1024 in SAM, MSA, SAMIHS, 512 in SAMUS')

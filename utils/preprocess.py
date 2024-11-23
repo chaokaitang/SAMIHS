@@ -2,11 +2,11 @@ import SimpleITK as sitk
 import numpy as np
 import os
 
-scans_path = '.\BCIHM\ct_scans_gz'
-masks_path = '.\BCIHM\masks_gz'
+scans_path = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1\ct_scans'
+masks_path = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1\masks'
 
-scans_path_2d = '.\BCIHM\ct_2d'
-masks_path_2d = '.\BCIHM\mask_2d'
+scans_path_2d = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1\ct_2d'
+masks_path_2d = r'E:\Chaokai_Tang\university\science-study\medical_image_segmentation\code\mycode\dataset\computed-tomography-images-for-intracranial-hemorrhage-detection-and-segmentation-1.3.1\mask_2d'
 
 ground_truths = os.listdir(masks_path)
 
