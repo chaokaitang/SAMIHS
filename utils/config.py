@@ -11,7 +11,7 @@ class Config_BCIHM:
     data_path = '/kaggle/working/SAMIHS/dataset'
     save_path = "/kaggle/working/SAMIHS/checkpoints/BCIHM/"
     tensorboard_path = "/kaggle/working/SAMIHS/tensorboard/BCIHM/"
-    load_path = '/kaggle/working/SAMIHS/pretrained/sam_vit_b_01ec64.pth'
+    load_path = '/kaggle/input/sam_vit_b_01ec64.pth/pytorch/default/1/sam_vit_b_01ec64.pth'
     save_path_code = "_"
 
     workers = 2                         # data loading workers (default: 8)
