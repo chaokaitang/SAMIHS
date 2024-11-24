@@ -26,7 +26,7 @@ class Config_BCIHM:
     test_split = "test"                 # the file name of testing set
     crop = None                         # the cropped image size
     eval_freq = 1                       # the frequency of evaluate the model
-    save_freq = 2000                    # the frequency of saving the model
+    save_freq = 20                      # the frequency of saving the model
     device = "cuda"                     # training device, cpu or cuda
     cuda = "on"                         # switch on/off cuda option (default: off)
     gray = "yes"                        # the type of input image
