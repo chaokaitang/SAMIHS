@@ -18,7 +18,7 @@ import cv2
 def eval_mask_slice2(valloader, model, criterion, opt, args):
     model.eval()
     val_losses, mean_dice = 0, 0
-    max_slice_number = opt.batch_size * (len(valloader) + 1)
+    max_slice_number = opt.batch_size * (len(valloader) + 1) * 2
     fore_dice = []
     hds_fore = []
     dices = np.zeros((max_slice_number, opt.classes))
