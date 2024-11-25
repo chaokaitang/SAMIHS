@@ -8,10 +8,10 @@ class Config_BCIHM:
     # save_path_code = "_"
 
     # This dataset is for intracranial hemorrhage segmentation
-    data_path = '/kaggle/working/SAMIHS/dataset'
+    data_path = '/kaggle/input/bcihm-processed'
     save_path = "/kaggle/working/SAMIHS/checkpoints/BCIHM/"
     tensorboard_path = "/kaggle/working/SAMIHS/tensorboard/BCIHM/"
-    load_path = '/kaggle/input/sam_vit_b_01ec64.pth/pytorch/default/1/sam_vit_b_01ec64.pth'
+    load_path = '/kaggle/input/samihs__20/pytorch/v20/1/SAMIHS__20.pth'
     save_path_code = "_"
 
     workers = 2                         # data loading workers (default: 8)
